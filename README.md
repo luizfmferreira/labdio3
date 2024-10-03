@@ -15,6 +15,34 @@ Paas: Plataforma como serviço, podemos gerenciar e desenvolver aplicativos e ut
 
 Saas: Software como serviço, permite a utilização de aplicativos completos. Nesse modelo, os recursos são mais fáceis de serem gerenciados por parte dos clientes.
 
+CRIANDO BANCO DE DADOS:
+1. Selecionamos a Opção Banco de Dados SQL em Serviços do Azure
+2. Criar Banco de dados SQL
+3. Criamos um grupo de Recursos: Teste_Dio_DB
+4. Nome do Banco: database_teste
+5. Criamos um Nome para o Servidor (Virtual): servidor-teste-dio
+6. Localização: (South America) Brazil South
+7. Método de Autenticação: Usar autenticação SQL e Microsoft Entra
+8. Logon: VM-Dio-Teste-BancoDados, Senha: DataBase@001$ 
+9. Administrador: luiz.ferreira57@cs.cruzeirodosul.edu.br (eu)
+10 Armazenamento de backup com redundância geográfica
+11 Rede
+   11.1	Ponto de extremidade público
+   11.2 Conexão Padrão
+   11.3 TLS 1.2 Recomendado  (Transport Layer Security 1.2) p/ Criptografia segura https
+12 Segurança   
+   12.1 Não habilitamos Microsoft Defender por questões de custo
+   12.2 Não configuramos nesse momento: Razão, Identidade do Servidor, Gerenciamento transparente de chaves de criptografia de dados, nem Sempre criptografado por tratar-se de um teste inicialização
+13 Não utilizamos nem Configurações Adicionais nem Rótulos
+
+A partir desse ponto abandonamos para não gerar débitos
+
+Visualizamos um resumo de custo estimado um pouco caro para arriscarmos, USD 506.70 mais 0.52 por GB Mês
+   
+   
+* - * - * - * - * - * - * - * - *   
+
+Criação de VM:
 
 Podemos criar e hospedar uma VM no Azure (Iaas). Podemos criar e hospedar utilizando um configuração prévia Explorar outras soluções relacionadas a VM Infra estrutura híbrida Azure Arc VM - VM Azure Arc em ambientes não Azure Solução Azure VMware, máquina virtual hospedada na Azure Azure Arc Server - solução mais complexa que Gerencia servidores físicos e máquinas VM Windows e Linux hospedados fora do ambiente Azure Podemos utilizar VM Linux ou Windows
 
@@ -42,4 +70,3 @@ Gerenciamento básico gratuito e não habilitamos backup nesse teste
 Criamos uma regra de alerta e habilitamos diagnóstico padrão
 
 Não configuramos Marcas e aban (acredito que seja necessário conhecimento adicional)
-
